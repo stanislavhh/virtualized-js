@@ -1,6 +1,6 @@
 {
     "name": "virtualized-js",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Virtualized List component for vanilla JS/TS projects",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
