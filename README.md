@@ -63,4 +63,4 @@ The code above will set height of item to 100px. To apply changes you need to ca
 
 
 ### Testing
- Here is a [code sandbox](https://codesandbox.io/s/fancy-resonance-vke92n)
+ Here is a [code sandbox](https://codesandbox.io/s/virtualized-js-vke92n)
