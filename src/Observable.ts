@@ -1,19 +1,19 @@
-import { Observer } from "./types"
+import { Observer } from './types'
 
 export default class Observable<S> {
-    observers: Observer<S>[] = []
-    
-    subscribe(...observers: Observer<S>[]) {
-        this.observers = [...this.observers, ...observers]
-    } 
+  observers: Observer<S>[] = []
 
-    unsubscribe(...observerNames: string[]) {
-        this.observers = this.observers.filter((o) => !observerNames.includes(o.name))
-    }
+  subscribe(...observers: Observer<S>[]) {
+    this.observers = [...this.observers, ...observers]
+  }
 
-    notify(data: S) {
-        this.observers.forEach((o) => {
-            o.update(data)
-        })
-    }
+  unsubscribe(...observerNames: string[]) {
+    this.observers = this.observers.filter((o) => !observerNames.includes(o.name))
+  }
+
+  notify(data: S) {
+    this.observers.forEach((o) => {
+      o.update(data)
+    })
+  }
 }
